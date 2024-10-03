@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ceebad55d6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <title>Samhan logistic</title>
+</head>
+<style>
+   
+    
+    .title{
+        font-size: 1.2rem;
+        color: #c50404;
+        font-weight: bold;
+    }
+    .iconl{
+        width: 120px;
+        cursor: pointer;
+    }
+    #bann{
+        height: 100vh;
+        width: 100%;
+        background-image: url(assets/BANNER/Banner1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navbar{
+        background-color: #9cbacb!important;
+    }
+    .nav-link  {
+        color:#c11618;
+        font-weight: 500;
+    }
+    .nav-link:hover  {
+        color:#c11618;
+        font-weight: 500;
+    }
+    .navbar-nav{
+        margin-left: 200px;      
+    }
+    .btn-red{
+        background-color: #c50404;
+        padding: 8px 30px;
+        color: white;
+        border: none;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .btn-white{
+        background-color: transparent;
+        width: 160px!important;
+        color: #c50404;
+        font-weight: bold;
+        border: none;
+        border: 4px solid #c50404;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .btn-white:hover{
+      background-color: #c50404;
+      color: white;
+      -webkit-transition: all 400ms linear;
+      -ms-transition: all 400ms linear;
+      transition: all 400ms linear;
+    }
+    .btn-play{
+      background-color: #ffffff;
+        width: 160px!important;
+        color: #c50404;
+        font-weight: bold;
+        border: none;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    #hubungi{
+        margin-top: 75vh;
+        background-color: transparent;
+        font-weight: bold;
+        padding: 5px 20px;
+        color: #c50404;
+        /* border: none; */
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 4px solid #c50404;
+    }
+    #hubungi:hover{
+      background-color: white;
+      -webkit-transition: background-color 400ms linear;
+      -ms-transition: background-color 400ms linear;
+      transition: background-color 400ms linear;
+    }
+    .title{
+      color: #c50404;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    .subtitle{
+      color: #d02235;
+      font-weight: 600;
+    }
+    .client{
+      width:200px;
+    }
+    .client img{
+      height: 60px;
+      width:auto;
+    }
+    footer{
+      background-color: #990000;
+      color: white;
+      font-size: .8rem;
+    }
+    .alamat{
+      margin-top: 60px;
+    }
+    .alamat ul{
+      list-style: none;
+      padding-left: 0px;
+    }
+    .alamat ul li{
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+
+
+    /* Layanan */
+    #banlayanan{
+        height: 600px;
+        background-image: url(assets/BACKGROUND\ PUDAR/D.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .judulmenu{
+        width: 200px;
+        margin-top: calc(50%);
+    }
+
+    #jaminanlist img{
+        height: 110px;
+        margin-top: 20px;
+    }
+
+    /* Armada */
+    #banarmada{
+        height: 600px;
+        background-image: url(assets/BACKGROUND\ PUDAR/A.png);
+        background-size: cover;
+        background-position: center;
+    }
+    #armadalist img{
+        height: 60px;
+        margin-top: 100px;
+    }
+    /* Cek Harga */
+    #cekhargalist{
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    #cekhargalist img{
+        height: 50px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    /* alur */
+    #banalur{
+        height: 550px;
+        background-image: url(assets/BACKGROUND\ PUDAR/E.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #alur img{
+        margin-top: 50px;
+        height: 400px;
+    }
+
+    /* profil */
+    #banprofil{
+        height: 500px;
+        background-image: url(assets/BACKGROUND\ PUDAR/E.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .textprofil{
+        font-size: 13px;
+        text-align: justify;
+      text-justify: inter-word;
+
+        
+    }
+</style>
+<body>
+   <div class="container-fluid" id="bann" >
+    <nav class="navbar navbar-expand-lg  fixed-top bg-light">
+      <div class="container-fluid">
+        <img class="ms-5" src="logo.png" alt="" srcset="" height="50px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shipper</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Transporter
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" >Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="-1" >Tentang Kami</a>
+            </li>
+          </ul>
+         
+          <button class="btn-red" id="login">Login</button>
+        </div>
+      </div>
+    </nav> 
+
+    <button id="hubungi" class="ms-5">Hubungi Kami</button>
+   </div>
+
+
+   <div class="container-fluid  p-0" id="banprofil" >
+    <div class="row">
+        <div class="col-lg-3">
+            <img class="judulmenu" src="assets/PROFIL PERUSAHAAN/Profil Perusahaan.png" alt="" srcset="">
+        </div>
+        <div class="col-lg-8 p-5" id="alur">
+          <div class="textprofil"><b>Samhan Logistic</b> berdiri pada tahun 2021 menjadi salah satu perusahaan ekspedisi yang inovatif yang telah berhasil melakukan pengembangan 
+            secara pesat dengan mengintegrasikan berbagai sistem manual networking sampai dengan sistem teknologi AI-terpadu-terbaru. Samhan
+            Logistic adalah perusahaan di bawah naungan PT. Samhan Taraqi Group yang melakukan control management terintegrasi di bidang
+            Ekspedisi, yang meliputi Aktivitas Ekpesidisi Muata Kereta Api dan Angkutan darat (EMKA & EAD), Aktivitas Ekspedisi Muatan Pesawat
+            Udara (EMPU) dan Aktivitas Ekspedisi Muatan Kapal Laut (EMKL), serta melayani penyediaan transportasi untuk kebutuhan perusahaan.</div><br>
+            <div class="textprofil text-justify"><b>Samhan Logistic</b> melakukan pengembangan trobosan terbaru dengan menggabungkan sistem manajemen berbasis teknologi terintegrasi
+            untuk menjalankan sistem kerja ekspedisi berbagai macam sektor usaha diantaranya : <font color="red" style="font-weight: bold;">Full Truck Load, Heavy Equipment, Retail Express, Cargo, 3PL Warehouse, Supply Chain</font>. Perkembangan bisnis di bidang ekspedisi mempunyai proyeksi yang sangat menjanjikan dari tahun
+            ke tahun. Bisa terlihat dari bertumbuhnya geliat industri, manufacture, dan sektor-sektor insfrastruktur lain yang tentu akan menciptakan
+            naiknya kebutuhan pelayanan jasa ekspedisi. Ini juga yang dilihat oleh <b>Samhan Logistic</b> sebagai peluang untuk terus berproses dan berprogres.</div><br>
+            <div class="textprofil"> Dengan semakin banyaknya dimen project yang sudah dan akan kami kerjakan, kedepannya kami akan membutuhkan supporting
+            pendanaan yang besar. Untuk itu kami membuka peluang kepada para investor untuk bekerja sama dalam menjalankan bisnis yang kami
+            jalankan. Tentu dengan tujuan pemenuhan target dan simbiosis bisnis yang menguntungkan dan menjanjikan profit yang bagus kedepannya.</div>
+        </div>
+    </div>
+      
+   </div>
+
+
+   
+
+
+   <div class="container-fluid  p-0 " id="clientkami" >
+   
+      <div class="row m-0 p-0 justify-content-center">
+        <button class="btn-white mt-3" width="100px" >Client Kami</button>
+      
+      </div>
+      <div class="row justify-content-center text-center mt-5 mb-2">
+        <div class="client">
+          <img class="img-fluid" src="assets/CLIENT KAMI/Client Logo 1.png" alt="" srcset="">
+        </div>
+        <div class="client">
+          <img class="img-fluid" src="assets/CLIENT KAMI/Client Logo 2.png" alt="" srcset="">
+        </div>
+        <div class="client">
+          <img class="img-fluid" src="assets/CLIENT KAMI/Client Logo 3.png" alt="" srcset="">
+        </div>
+        <div class="client">
+          <img class="img-fluid" src="assets/CLIENT KAMI/Client Logo 4.png" alt="" srcset="">
+        </div>
+        <div class="client">
+          <img class="img-fluid" src="assets/CLIENT KAMI/Client Logo 5.png" alt="" srcset="">
+        </div>
+      </div>
+   </div>
+
+   <footer class="container-fluid p-5 mt-5">
+      <div class="row">
+        <div class="col-3">
+          <img src="assets/Logo Samhan Putih.png" alt="" srcset="" width="140px">
+          <br>
+          <div class="alamat">
+          <b>Kalisalak</b> <br>Jl. Ketapang No 1 <br>Kalisalak, Kab. Batang
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col">
+              Shipper
+              <div class="alamat">
+              <ul>
+                <li>Jaminan Layanan</li>
+                <li>Informasi Armada</li>
+                <li>Cek Harga</li>
+              </ul>
+              </div>
+            </div>
+            <div class="col">
+              Transporter
+              <div class="alamat">
+                <ul>
+                  <li>Alur Daftar Vendor</li>
+                  <li>List Project</li>
+                
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+            Perusahaan
+            <div class="alamat">
+                <ul>
+                  <li>Tentang Kami</li>
+                  <li>Blog</li>
+                  <li>Hubungi kami</li>
+                
+                </ul>
+              </div>
+            </div>
+             
+            
+          </div>
+
+        </div>
+        <div class="col-3 text-end">
+          <button class="btn-play"><img src="gplay.png" class="img-fluid" srcset=""></button>
+        </div>
+      </div>
+   </footer>
+
+</body>
+<script>
+
+
+
+   
+</script>
+</html>
